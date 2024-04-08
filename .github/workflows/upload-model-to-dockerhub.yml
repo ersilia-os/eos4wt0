@@ -2,10 +2,10 @@ name: Upload model to DockerHub
 on:
   workflow_dispatch:
   
-  workflow_run:
-    workflows: ["Upload model to S3"]
-    types:
-      - completed
+  # workflow_run:
+  #   workflows: ["Upload model to S3"]
+  #   types:
+  #     - completed
   
 jobs:
   upload_model_to_dockerhub:
@@ -113,8 +113,8 @@ jobs:
               exit 1
           fi
         env:
-          PULL_IMAGE: n
-        
+          PULL_IMAGE: False
+          
       - name: Build and push
         id: buildMultiple
         continue-on-error: true
