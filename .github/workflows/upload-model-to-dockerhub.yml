@@ -100,7 +100,6 @@ jobs:
       - name: Test Built Image
         id: testBuiltImage
         run: |
-          export PULL_IMAGE=n
           ersilia -v fetch ${{ github.event.repository.name }} --from_dockerhub
           ersilia -v serve ${{ github.event.repository.name }}
           ersilia -v run -i "CCCC" -o "output.json"
@@ -108,11 +107,13 @@ jobs:
           result=$(jq '.[0].output.outcome[] | select(. != null)' output.json | wc -l)
           echo "Expected correct outcomes $expected"
           echo "Returned correct outcomes $result"
-          if [ $expected -ne $ $result ]
+          if [ $expected -ne $result ]
             then
               echo "Error in model output, aborting build and push"
               exit 1
           fi
+        env:
+          PULL_IMAGE: n
         
       - name: Build and push
         id: buildMultiple
