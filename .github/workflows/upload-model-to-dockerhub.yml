@@ -106,6 +106,8 @@ jobs:
           ersilia -v run -i "CCCC" -o "output.json"
           expected=$(jq '.[0].output.outcome[]' output.json | wc -l)
           result=$(jq '.[0].output.outcome[] | select(. != null)' output.json | wc -l)
+          echo "Expected correct outcomes $expected"
+          echo "Returned correct outcomes $result"
           if [ $expected -ne $ $result ]
             then
               echo "Error in model output, aborting build and push"
