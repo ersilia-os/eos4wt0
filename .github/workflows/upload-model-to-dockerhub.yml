@@ -113,7 +113,7 @@ jobs:
               exit 1
           fi
         env:
-          PULL_IMAGE: False
+          PULL_IMAGE: "False"
           
       - name: Build and push
         id: buildMultiple
