@@ -16,7 +16,7 @@ root = os.path.dirname(os.path.abspath(__file__))
 # my model
 def my_model(smiles_list):
     mols = [Chem.MolFromSmiles(smi) for smi in smiles_list]
-    fps = [AllChem.GetMorganFingerprintAsBitVect(mol, useChirality=True, radius=3, nBits = 2048) for mol in mols]
+    fps = [AllChem.GetMorganFingerprintAsBitVect(mol, useChirality=True, radius=3, nBits=2048) for mol in mols]
     array_fps = [np.array(fp) for fp in fps]
     return array_fps
 
@@ -40,6 +40,6 @@ assert input_len == output_len
 # write output in a .csv file
 with open(output_file, "w") as f:
     writer = csv.writer(f)
-    writer.writerow(["fps-{}".format(i) for i in range(2048)])  # header
+    writer.writerow(["dimension_{0}".format(str(i).zfill(4)) for i in range(2048)])  # header
     for o in outputs:
         writer.writerow(o)
