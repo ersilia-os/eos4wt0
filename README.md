@@ -1,45 +1,88 @@
-# Morgan Fingerprints
+# Morgan fingerprints in binary form (radius 3, 2048 dimensions)
 
-The Morgan Fingerprints are one of the most widely used molecular representations. They are circular representations (from an atom,search the atoms around with a radius n) and can have thousands of features. This implementation uses the RDKit package and is done with radius 3 and 2048 dimensions,providing a binary vector as output. For Morgan counts, see eos5axz.
+The Morgan Fingerprints are one of the most widely used molecular representations. They are circular representations (from an atom,search the atoms around with a radius n) and can have thousands of features. This implementation uses the RDKit package and is done with radius 3 and 2048 dimensions, providing a binary vector as output. For Morgan counts, see model eos5axz.
 
-## Identifiers
+This model was incorporated on 2023-12-01.
 
-* EOS model ID: `eos4wt0`
-* Slug: `morgan-fps`
+## Information
+### Identifiers
+- **Ersilia Identifier:** `eos4wt0`
+- **Slug:** `morgan-binary-fps`
 
-## Characteristics
+### Domain
+- **Task:** `Representation`
+- **Subtask:** `Featurization`
+- **Biomedical Area:** `Any`
+- **Target Organism:** `Not Applicable`
+- **Tags:** `Descriptor`, `Fingerprint`
 
-* Input: `Compound`
-* Input Shape: `Single`
-* Task: `Representation`
-* Output: `Descriptor`
-* Output Type: `Integer`
-* Output Shape: `List`
-* Interpretation: Binary vector representing the SMILES
+### Input
+- **Input:** `Compound`
+- **Input Dimension:** `1`
 
-## References
+### Output
+- **Output Dimension:** `2048`
+- **Output Consistency:** `Fixed`
+- **Interpretation:** Binary vector representing the SMILES
 
-* [Publication](https://pubmed.ncbi.nlm.nih.gov/20426451/)
-* [Source Code](https://www.rdkit.org/docs)
-* Ersilia contributor: [GemmaTuron](https://github.com/GemmaTuron)
+Below are the **Output Columns** of the model:
+| Name | Type | Direction | Description |
+|------|------|-----------|-------------|
+| dim_0000 | integer |  | Morgan fingerprint bit index 0 |
+| dim_0001 | integer |  | Morgan fingerprint bit index 1 |
+| dim_0002 | integer |  | Morgan fingerprint bit index 2 |
+| dim_0003 | integer |  | Morgan fingerprint bit index 3 |
+| dim_0004 | integer |  | Morgan fingerprint bit index 4 |
+| dim_0005 | integer |  | Morgan fingerprint bit index 5 |
+| dim_0006 | integer |  | Morgan fingerprint bit index 6 |
+| dim_0007 | integer |  | Morgan fingerprint bit index 7 |
+| dim_0008 | integer |  | Morgan fingerprint bit index 8 |
+| dim_0009 | integer |  | Morgan fingerprint bit index 9 |
 
-## Ersilia model URLs
-* [GitHub](https://github.com/ersilia-os/eos4wt0)
-* [AWS S3](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4wt0.zip)
-* [DockerHub](https://hub.docker.com/r/ersiliaos/eos4wt0) (AMD64, ARM64)
+_10 of 2048 columns are shown_
+### Source and Deployment
+- **Source:** `Local`
+- **Source Type:** `External`
+- **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos4wt0](https://hub.docker.com/r/ersiliaos/eos4wt0)
+- **Docker Architecture:** `AMD64`, `ARM64`
+- **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4wt0.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4wt0.zip)
 
-## Citation
+### Resource Consumption
 
-If you use this model, please cite the [original authors](https://pubmed.ncbi.nlm.nih.gov/20426451/) of the model and the [Ersilia Model Hub](https://github.com/ersilia-os/ersilia/blob/master/CITATION.cff).
 
-## License
+### References
+- **Source Code**: [https://www.rdkit.org/docs](https://www.rdkit.org/docs)
+- **Publication**: [https://pubmed.ncbi.nlm.nih.gov/20426451/](https://pubmed.ncbi.nlm.nih.gov/20426451/)
+- **Publication Type:** `Peer reviewed`
+- **Publication Year:** `2010`
+- **Ersilia Contributor:** [GemmaTuron](https://github.com/GemmaTuron)
 
-This package is licensed under a GPL-3.0 license. The model contained within this package is licensed under a BSD-3.0 license.
+### License
+This package is licensed under a [GPL-3.0](https://github.com/ersilia-os/ersilia/blob/master/LICENSE) license. The model contained within this package is licensed under a [BSD-3-Clause](LICENSE) license.
 
-Notice: Ersilia grants access to these models 'as is' provided by the original authors, please refer to the original code repository and/or publication if you use the model in your research.
+**Notice**: Ersilia grants access to models _as is_, directly from the original authors, please refer to the original code repository and/or publication if you use the model in your research.
 
-## About Us
 
-The [Ersilia Open Source Initiative](https://ersilia.io) is a Non Profit Organization ([1192266](https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5170657/full-print)) with the mission is to equip labs, universities and clinics in LMIC with AI/ML tools for infectious disease research.
+## Use
+To use this model locally, you need to have the [Ersilia CLI](https://github.com/ersilia-os/ersilia) installed.
+The model can be **fetched** using the following command:
+```bash
+# fetch model from the Ersilia Model Hub
+ersilia fetch eos4wt0
+```
+Then, you can **serve**, **run** and **close** the model as follows:
+```bash
+# serve the model
+ersilia serve eos4wt0
+# generate an example file
+ersilia example -n 3 -f my_input.csv
+# run the model
+ersilia run -i my_input.csv -o my_output.csv
+# close the model
+ersilia close
+```
 
-[Help us](https://www.ersilia.io/donate) achieve our mission!
+## About Ersilia
+The [Ersilia Open Source Initiative](https://ersilia.io) is a tech non-profit organization fueling sustainable research in the Global South.
+Please [cite](https://github.com/ersilia-os/ersilia/blob/master/CITATION.cff) the Ersilia Model Hub if you've found this model to be useful. Always [let us know](https://github.com/ersilia-os/ersilia/issues) if you experience any issues while trying to run it.
+If you want to contribute to our mission, consider [donating](https://www.ersilia.io/donate) to Ersilia!
