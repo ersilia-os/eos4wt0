@@ -1,36 +1,47 @@
 {
     "Identifier": "eos4wt0",
-    "Slug": "morgan-fps",
+    "Slug": "morgan-binary-fps",
     "Status": "Ready",
-    "Title": "Morgan Fingerprints",
-    "Description": "The Morgan Fingerprints are one of the most widely used molecular representations. They are circular representations (from an atom,search the atoms around with a radius n) and can have thousands of features. This implementation uses the RDKit package and is done with radius 3 and 2048 dimensions,providing a binary vector as output. For Morgan counts, see eos5axz.",
-    "Mode": "Pretrained",
-    "Task": [
-        "Representation"
-    ],
+    "Title": "Morgan fingerprints in binary form (radius 3, 2048 dimensions)",
+    "Description": "The Morgan Fingerprints are one of the most widely used molecular representations. They are circular representations (from an atom,search the atoms around with a radius n) and can have thousands of features. This implementation uses the RDKit package and is done with radius 3 and 2048 dimensions, providing a binary vector as output. For Morgan counts, see model eos5axz.\n",
+    "Source": "Local",
+    "Source Type": "External",
     "Input": [
         "Compound"
     ],
-    "Input Shape": "Single",
+    "Input Dimension": 1,
+    "Task": "Representation",
+    "Subtask": "Featurization",
+    "Biomedical Area": [
+        "Any"
+    ],
+    "Target Organism": [
+        "Not Applicable"
+    ],
     "Output": [
-        "Descriptor"
+        "Value"
     ],
-    "Output Type": [
-        "Integer"
-    ],
-    "Output Shape": "List",
+    "Output Dimension": 2048,
+    "Output Consistency": "Fixed",
     "Interpretation": "Binary vector representing the SMILES",
     "Tag": [
         "Descriptor",
         "Fingerprint"
     ],
     "Publication": "https://pubmed.ncbi.nlm.nih.gov/20426451/",
+    "Publication Type": "Peer reviewed",
+    "Publication Year": 2010,
     "Source Code": "https://www.rdkit.org/docs",
-    "License": "BSD-3.0",
-    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4wt0.zip",
+    "License": "BSD-3-Clause",
+    "Contributor": "GemmaTuron",
+    "Incorporation Date": "2023-12-01",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos4wt0",
     "Docker Architecture": [
         "AMD64",
         "ARM64"
+    ],
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4wt0.zip",
+    "Deployment": [
+        "Local"
     ]
 }
