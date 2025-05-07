@@ -44,8 +44,8 @@
         "AMD64",
         "ARM64"
     ],
-    "Docker Pack Method": "FastAPI",
     "Model Size": 1.0,
     "Environment Size": 435.0,
-    "Image Size": 390.88
+    "Image Size": 390.88,
+    "Docker Pack Method": "FastAPI"
 }
