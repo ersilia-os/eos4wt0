@@ -5,6 +5,7 @@ from bentoml.adapters import JsonInput
 from bentoml.types import JsonSerializable
 from bentoml.service import BentoServiceArtifact
 
+
 import pickle
 import os
 import shutil
