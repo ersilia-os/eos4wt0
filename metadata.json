@@ -38,6 +38,8 @@
     "License": "BSD-3-Clause",
     "Contributor": "GemmaTuron",
     "Incorporation Date": "2023-12-01",
+    "Last Packaging Date": "2025-10-09",
+    "Release": "v1.0.0",
     "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4wt0.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos4wt0",
     "Docker Architecture": [
@@ -46,11 +48,11 @@
     ],
     "Model Size": 1.0,
     "Environment Size": 456.0,
-    "Image Size": 391.17,
-    "Computational Performance 1": 29.47,
-    "Computational Performance 2": 19.22,
-    "Computational Performance 3": 19.94,
-    "Computational Performance 4": 59.5,
-    "Computational Performance 5": 239.07,
+    "Image Size": 414.52,
+    "Computational Performance 1": 27.24,
+    "Computational Performance 2": 16.89,
+    "Computational Performance 3": 17.24,
+    "Computational Performance 4": 22.83,
+    "Computational Performance 5": 47.79,
     "Docker Pack Method": "FastAPI"
 }
