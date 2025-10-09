@@ -2,8 +2,7 @@
 
 The Morgan Fingerprints are one of the most widely used molecular representations. They are circular representations (from an atom,search the atoms around with a radius n) and can have thousands of features. This implementation uses the RDKit package and is done with radius 3 and 2048 dimensions, providing a binary vector as output. For Morgan counts, see model eos5axz.
 
-This model was incorporated on 2023-12-01.
-
+This model was incorporated on 2023-12-01.Last packaged on 2025-10-09.
 
 ## Information
 ### Identifiers
@@ -51,12 +50,12 @@ _10 of 2048 columns are shown_
 ### Resource Consumption
 - **Model Size (Mb):** `1`
 - **Environment Size (Mb):** `456`
-- **Image Size (Mb):** `391.17`
+- **Image Size (Mb):** `414.52`
 
 **Computational Performance (seconds):**
-- 10 inputs: `29.47`
-- 100 inputs: `19.94`
-- 10000 inputs: `239.07`
+- 10 inputs: `27.24`
+- 100 inputs: `17.24`
+- 10000 inputs: `47.79`
 
 ### References
 - **Source Code**: [https://www.rdkit.org/docs](https://www.rdkit.org/docs)
