@@ -4,6 +4,7 @@ The Morgan Fingerprints are one of the most widely used molecular representation
 
 This model was incorporated on 2023-12-01.
 
+
 ## Information
 ### Identifiers
 - **Ersilia Identifier:** `eos4wt0`
@@ -13,7 +14,7 @@ This model was incorporated on 2023-12-01.
 - **Task:** `Representation`
 - **Subtask:** `Featurization`
 - **Biomedical Area:** `Any`
-- **Target Organism:** `Not Applicable`
+- **Target Organism:** `Any`
 - **Tags:** `Descriptor`, `Fingerprint`
 
 ### Input
