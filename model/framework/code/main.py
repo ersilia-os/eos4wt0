@@ -1,6 +1,5 @@
 # imports
 import os
-import csv
 import sys
 import numpy as np
 from rdkit import Chem
@@ -35,4 +34,4 @@ assert input_len == output_len
 
 headers= headers = ["dim_{0}".format(str(i).zfill(4)) for i in range(len(outputs[0]))]
 
-write_out(outputs,headers,output_file,dtype='int32')
+write_out(outputs,headers,output_file,np.int32)
