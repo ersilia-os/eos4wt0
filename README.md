@@ -59,7 +59,7 @@ _10 of 2048 columns are shown_
 
 ### References
 - **Source Code**: [https://www.rdkit.org/docs](https://www.rdkit.org/docs)
-- **Publication**: [https://pubmed.ncbi.nlm.nih.gov/20426451/](https://pubmed.ncbi.nlm.nih.gov/20426451/)
+- **Publication**: [https://doi.org/10.1021/ci100050t](https://doi.org/10.1021/ci100050t)
 - **Publication Type:** `Peer reviewed`
 - **Publication Year:** `2010`
 - **Ersilia Contributor:** [GemmaTuron](https://github.com/GemmaTuron)
