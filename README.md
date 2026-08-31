@@ -28,16 +28,16 @@ This model was incorporated on 2023-12-01.Last packaged on 2025-12-24.
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
 |------|------|-----------|-------------|
-| dim_0000 | integer |  | Morgan fingerprint bit index 0 |
-| dim_0001 | integer |  | Morgan fingerprint bit index 1 |
-| dim_0002 | integer |  | Morgan fingerprint bit index 2 |
-| dim_0003 | integer |  | Morgan fingerprint bit index 3 |
-| dim_0004 | integer |  | Morgan fingerprint bit index 4 |
-| dim_0005 | integer |  | Morgan fingerprint bit index 5 |
-| dim_0006 | integer |  | Morgan fingerprint bit index 6 |
-| dim_0007 | integer |  | Morgan fingerprint bit index 7 |
-| dim_0008 | integer |  | Morgan fingerprint bit index 8 |
-| dim_0009 | integer |  | Morgan fingerprint bit index 9 |
+| feat_0000 | integer |  | Morgan fingerprint bit index 0 |
+| feat_0001 | integer |  | Morgan fingerprint bit index 1 |
+| feat_0002 | integer |  | Morgan fingerprint bit index 2 |
+| feat_0003 | integer |  | Morgan fingerprint bit index 3 |
+| feat_0004 | integer |  | Morgan fingerprint bit index 4 |
+| feat_0005 | integer |  | Morgan fingerprint bit index 5 |
+| feat_0006 | integer |  | Morgan fingerprint bit index 6 |
+| feat_0007 | integer |  | Morgan fingerprint bit index 7 |
+| feat_0008 | integer |  | Morgan fingerprint bit index 8 |
+| feat_0009 | integer |  | Morgan fingerprint bit index 9 |
 
 _10 of 2048 columns are shown_
 ### Source and Deployment
