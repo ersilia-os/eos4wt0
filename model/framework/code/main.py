@@ -32,6 +32,6 @@ input_len = len(smiles_list)
 output_len = len(outputs)
 assert input_len == output_len
 
-headers= headers = ["dim_{0}".format(str(i).zfill(4)) for i in range(len(outputs[0]))]
+headers= headers = ["feat_{0}".format(str(i).zfill(4)) for i in range(len(outputs[0]))]
 
 write_out(outputs,headers,output_file,np.int32)
