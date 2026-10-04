@@ -1,6 +1,6 @@
 # Morgan fingerprints in binary form (radius 3, 2048 dimensions)
 
-The Morgan Fingerprints are one of the most widely used molecular representations. They are circular representations (from an atom,search the atoms around with a radius n) and can have thousands of features. This implementation uses the RDKit package and is done with radius 3 and 2048 dimensions, providing a binary vector as output. For Morgan counts, see model eos5axz.
+Represents a molecule as a 2,048-bit binary fingerprint recording which circular substructures are present within a radius of three bonds. Rogers and Hahn introduced extended-connectivity fingerprints specifically for structure-activity modelling rather than substructure search, iteratively updating atom identifiers with information from their neighbourhoods and hashing the result. Bit collisions mean a set bit can arise from more than one substructure, and the binary form records presence while discarding how many times a feature occurs.
 
 This model was incorporated on 2023-12-01.Last packaged on 2026-08-31.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2023-12-01.Last packaged on 2026-08-31.
 ### Output
 - **Output Dimension:** `2048`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Binary vector representing the SMILES
+- **Interpretation:** 2048-bit binary fingerprint where each bit flags a circular substructure within radius three.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
