@@ -1,6 +1,6 @@
 # Morgan fingerprints in binary form (radius 3, 2048 dimensions)
 
-Represents a molecule as a 2,048-bit binary fingerprint recording which circular substructures are present within a radius of three bonds. Rogers and Hahn introduced extended-connectivity fingerprints specifically for structure-activity modelling rather than substructure search, iteratively updating atom identifiers with information from their neighbourhoods and hashing the result. Bit collisions mean a set bit can arise from more than one substructure, and the binary form records presence while discarding how many times a feature occurs.
+Represents a molecule as a 2,048-bit binary fingerprint recording which circular substructures are present within a radius of three bonds, computed with RDKit and sensitive to stereochemistry. Rogers and Hahn introduced extended-connectivity fingerprints specifically for structure-activity modelling rather than substructure search, iteratively updating atom identifiers with information from their neighbourhoods and hashing the result. Bit collisions let one bit stand for more than one substructure, and the binary form records presence while discarding how often a feature occurs.
 
 This model was incorporated on 2023-12-01.Last packaged on 2026-08-31.
 
